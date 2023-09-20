@@ -1,89 +1,60 @@
-<?php 
- 
+<?php
 
- // Ejercicio 1 
-echo "Hola Mundo";
+//Ejercicio 1
 
-echo "<br>"; 
-echo "<br>"; 
+$n = 3; 
+
+if ($n > 0) {
+    echo "El número ingresado es un número positivo.<br>";
+}
+
+echo "<br>";
 
 //Ejercicio 2
 
-$variable = "Hola Mundo";
-    echo $variable;
+$n2 = 6;
 
-    echo "<br>"; 
-    echo "<br>"; 
-
-//Variables enteras - Ejercicio 3
-
-$numero10 = 10;
-
-$numero5 = 5;
-
- echo ($numero10 + $numero5) . "<br>"; //SUMA
-
- echo ($numero10 - $numero5) . "<br>"; //RESTA
-
- echo ($numero10 * $numero5) . "<br>"; //MULTIPLICACION
-
- echo ($numero10 / $numero5) . "<br>"; //DIVISION ENTERA
-
- echo  ($numero10 % $numero5) . "<br>"; //EL RESTO DE LA DIVISION ENTERA
-
- echo "<br>"; 
- echo "<br>"; 
-
-//Transformación de grados - Ejercicio 4
-
- $celsius = 20;
- $fahrenheit = ($celsius * 9/5) + 32;
-
- echo "20°C es igual a " . $fahrenheit . "°F";
-
- echo "<br>"; 
- echo "<br>"; 
-
-
- //Ejercicio 5
-
-
-$baseRectangulo = 18; 
-$alturaRectangulo = 12; 
-
-
-$areaRectangulo = $baseRectangulo * $alturaRectangulo;
-$perimetroRectangulo = 2 * ($baseRectangulo + $alturaRectangulo);
-
-
-$radioCirculo = 30;
-$pi = 3.14159265;
-
-
-$areaCirculo = $pi * ($radioCirculo ** 2);
-$perimetroCirculo = 2 * $pi * $radioCirculo;
+if ($n2 > 1 && $n2 < 10) {
+    echo "El número ingresado es mayor a 1 y menor a 10 . <br>";
+}
 
 echo "<br>";
+
+//Ejercicio 3
+
+$n3 = 5;
+
+if ($n3 >=  10 || $n3 < 2) {
+    echo "El número ingresado es mayor o igual a 10 o menor a 2 . <br>";
+}
+else {
+    echo "El número ingresado no pudo ser validado . <br>";
+}
+
 echo "<br>";
 
-// Imprimir resultados
+//Ejercicio 4
 
-echo "<b>Rectángulo:</b>";
-echo "<br>";
-echo "Área: " . $areaRectangulo . " cm²";
-echo "<br>";
-echo "Perímetro: " . $perimetroRectangulo . " cm";
+$numero1 = 8;
 
-echo "<br>";
-echo "<br>";
-
-echo "<b>Círculo:</b>";
-echo "<br>";
-echo "Área: " . $areaCirculo . " cm²";
-echo "<br>";
-echo "Perímetro: " . $perimetroCirculo . " cm";
+$numero2 = 4;
 
 
+if ($numero1 > $numero2) {
+    echo $numero1 + $numero2 . "<br>";
+    echo $numero1 - $numero2 . "<br>";
+}
+
+
+elseif ($numero2 > $numero1) {
+    echo $numero1 * $numero2 . "<br>";
+    echo $numero2 / $numero1 . "<br>";
+    echo $numero2 % $numero1 . "<br>";
+}
+
+else {
+    echo "Los números ingresados son iguales.<br>";
+}
 
 
 ?>
